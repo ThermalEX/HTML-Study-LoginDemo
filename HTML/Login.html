@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../BOOTSTRAP/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../CSS/Login.css">
+</head>
+
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top animate__fadeOut">
+            <div class="container">
+                <img src="../PIC/logo.png" alt="" style="width: 50px;">
+                <a href="#" class="navbar-brand float-start">外贸管理系统登录界面</a>
+            </div>
+        </nav>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="center square">
+                <span></span>
+                <span></span>
+                <span></span>
+                <div class="content">
+                    <h1 class="animate__fadeIn">Hello, User</h1>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary btn-md float-end mt5" data-bs-toggle="modal" data-bs-target="#loginBtn">
+                        Login>>>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="loginBtn" tabindex="-1" aria-labelledby="ModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel">Login</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Username">
+                                        </div>
+                                
+                                        <div>
+                                            <img src="../PIC/yzm.png" class="img-thumbnail w-50 float-start">
+                                        </div>
+                                        <div class="input-group .input-group-lg mb-3 w-50 float-end">
+                                            <input type="text" class="form-control" placeholder="CAPTCHA">
+                                        </div>
+
+                                        <div class="input-group">
+                                            <input type="password" class="form-control" placeholder="password">
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Login</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="../BOOTSTRAP/js/bootstrap.min.js"></script>
+</body>
+
+</html>
